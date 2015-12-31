@@ -12,14 +12,23 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.view.backgroundColor = UIColor.grayColor()
+        
+        let aniView = AnimationView(frame: CGRectMake(self.view.frame.width/2-35, self.view.frame.height/2-70, 70, 70))
+        aniView.isAnimation = true
+        aniView.colors = [UIColor.redColor().CGColor,
+                          UIColor.yellowColor().CGColor,
+                          UIColor.redColor().CGColor]
+        self.view.addSubview(aniView)
+        
+        
+        let aniLabel = AnimationLabel(frame: CGRectMake(self.view.frame.width/2-100, CGRectGetMaxY(aniView.frame)+10, 200, 40))
+        aniLabel.isAnimation = true
+        aniLabel.colors = [UIColor.blackColor().CGColor,
+                           UIColor.whiteColor().CGColor,
+                           UIColor.blackColor().CGColor]
+        self.view.addSubview(aniLabel)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
