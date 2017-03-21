@@ -19,9 +19,9 @@ class AnimationView: UIView {
                 animation?.fromValue = [-0.5,-0.25,0]
                 animation?.toValue = [1,1.25,1.5]
                 animation?.repeatCount = HUGE
-                animation?.removedOnCompletion = false
+                animation?.isRemovedOnCompletion = false
                 
-                gradientLayer!.addAnimation(animation!, forKey: nil)
+                gradientLayer!.add(animation!, forKey: nil)
             }
         }
     }
@@ -32,7 +32,7 @@ class AnimationView: UIView {
             gradientLayer!.colors = newColors
         }
         get {
-            return gradientLayer?.colors as! [CGColorRef]
+            return gradientLayer?.colors as! [CGColor]
         }
     }
     
@@ -48,7 +48,7 @@ class AnimationView: UIView {
         
         gradientLayer = CAGradientLayer()
         gradientLayer!.bounds = self.bounds
-        gradientLayer!.position = CGPointMake(frame.width/2, frame.height/2)
+        gradientLayer!.position = CGPoint(x: frame.width/2, y: frame.height/2)
         
 //        gradientLayer!.colors = [UIColor.blackColor().CGColor,
 //                                 UIColor.whiteColor().CGColor,
@@ -56,8 +56,8 @@ class AnimationView: UIView {
         
         gradientLayer!.locations = [0.2,0.5,0.8];
         
-        gradientLayer!.startPoint = CGPointMake(0.5, 1)
-        gradientLayer!.endPoint = CGPointMake(0.5, 0)
+        gradientLayer!.startPoint = CGPoint(x: 0.5, y: 1)
+        gradientLayer!.endPoint = CGPoint(x: 0.5, y: 0)
         
         self.layer.addSublayer(gradientLayer!)
         gradientLayer!.mask = imageView.layer

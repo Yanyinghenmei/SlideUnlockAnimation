@@ -13,21 +13,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.grayColor()
+        self.view.backgroundColor = UIColor.gray
         
-        let aniView = AnimationView(frame: CGRectMake(self.view.frame.width/2-35, self.view.frame.height/2-70, 70, 70))
+        let aniView = AnimationView(frame: CGRect(x: self.view.frame.width/2-35, y: self.view.frame.height/2-70, width: 70, height: 70))
         aniView.isAnimation = true
-        aniView.colors = [UIColor.redColor().CGColor,
-                          UIColor.yellowColor().CGColor,
-                          UIColor.redColor().CGColor]
+        aniView.colors = [UIColor.red.cgColor,
+                          UIColor.yellow.cgColor,
+                          UIColor.red.cgColor]
         self.view.addSubview(aniView)
         
         
-        let aniLabel = AnimationLabel(frame: CGRectMake(self.view.frame.width/2-100, CGRectGetMaxY(aniView.frame)+10, 200, 40))
+        let aniLabel = AnimationLabel(frame: CGRect(x: self.view.frame.width/2-100, y: aniView.frame.maxY+10, width: 200, height: 40))
         aniLabel.isAnimation = true
-        aniLabel.colors = [UIColor.blackColor().CGColor,
-                           UIColor.whiteColor().CGColor,
-                           UIColor.blackColor().CGColor]
+        aniLabel.colors = [UIColor.black.cgColor,
+                           UIColor.white.cgColor,
+                           UIColor.black.cgColor]
         self.view.addSubview(aniLabel)
     }
 }

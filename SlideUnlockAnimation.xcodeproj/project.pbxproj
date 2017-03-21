@@ -14,8 +14,8 @@
 		656971111C34CA2300D4A4B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6569710F1C34CA2300D4A4B5 /* LaunchScreen.storyboard */; };
 		6569711C1C34CA2400D4A4B5 /* SlideUnlockAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569711B1C34CA2400D4A4B5 /* SlideUnlockAnimationTests.swift */; };
 		656971271C34CA2400D4A4B5 /* SlideUnlockAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656971261C34CA2400D4A4B5 /* SlideUnlockAnimationUITests.swift */; };
-		656971351C34CA4800D4A4B5 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656971341C34CA4800D4A4B5 /* AnimationView.swift */; settings = {ASSET_TAGS = (); }; };
-		656971371C34E00A00D4A4B5 /* AnimationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656971361C34E00A00D4A4B5 /* AnimationLabel.swift */; settings = {ASSET_TAGS = (); }; };
+		656971351C34CA4800D4A4B5 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656971341C34CA4800D4A4B5 /* AnimationView.swift */; };
+		656971371C34E00A00D4A4B5 /* AnimationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656971361C34E00A00D4A4B5 /* AnimationLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,13 +198,16 @@
 				TargetAttributes = {
 					656971021C34CA2300D4A4B5 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0810;
 					};
 					656971161C34CA2400D4A4B5 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0810;
 						TestTargetID = 656971021C34CA2300D4A4B5;
 					};
 					656971211C34CA2400D4A4B5 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0810;
 						TestTargetID = 656971021C34CA2300D4A4B5;
 					};
 				};
@@ -408,6 +411,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Yanyinghenmei-com.github.SlideUnlockAnimation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -419,6 +423,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Yanyinghenmei-com.github.SlideUnlockAnimation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -430,6 +435,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Yanyinghenmei-com.github.SlideUnlockAnimationTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlideUnlockAnimation.app/SlideUnlockAnimation";
 			};
 			name = Debug;
@@ -442,6 +448,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Yanyinghenmei-com.github.SlideUnlockAnimationTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlideUnlockAnimation.app/SlideUnlockAnimation";
 			};
 			name = Release;
@@ -453,6 +460,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Yanyinghenmei-com.github.SlideUnlockAnimationUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SlideUnlockAnimation;
 				USES_XCTRUNNER = YES;
 			};
@@ -465,6 +473,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Yanyinghenmei-com.github.SlideUnlockAnimationUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SlideUnlockAnimation;
 				USES_XCTRUNNER = YES;
 			};
@@ -489,6 +498,7 @@
 				6569712D1C34CA2400D4A4B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6569712E1C34CA2400D4A4B5 /* Build configuration list for PBXNativeTarget "SlideUnlockAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +507,7 @@
 				656971301C34CA2400D4A4B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		656971311C34CA2400D4A4B5 /* Build configuration list for PBXNativeTarget "SlideUnlockAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +516,7 @@
 				656971331C34CA2400D4A4B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

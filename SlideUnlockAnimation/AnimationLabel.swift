@@ -21,9 +21,9 @@ class AnimationLabel: UIView {
                 animation?.fromValue = [-0.5,-0.25,0]
                 animation?.toValue = [1,1.25,1.5]
                 animation?.repeatCount = HUGE
-                animation?.removedOnCompletion = false
+                animation?.isRemovedOnCompletion = false
                 
-                gradientLayer!.addAnimation(animation!, forKey: nil)
+                gradientLayer!.add(animation!, forKey: nil)
             }
         }
     }
@@ -32,7 +32,7 @@ class AnimationLabel: UIView {
             gradientLayer!.colors = newColors
         }
         get {
-            return gradientLayer?.colors as! [CGColorRef]
+            return gradientLayer?.colors as! [CGColor]
         }
     }
 
@@ -41,12 +41,12 @@ class AnimationLabel: UIView {
         
         let label = UILabel(frame: self.bounds)
         label.text = "Slide unlock animation";
-        label.textAlignment = NSTextAlignment.Center
+        label.textAlignment = NSTextAlignment.center
         self .addSubview(label)
         
         gradientLayer = CAGradientLayer()
         gradientLayer!.bounds = self.bounds
-        gradientLayer!.position = CGPointMake(frame.width/2, frame.height/2)
+        gradientLayer!.position = CGPoint(x: frame.width/2, y: frame.height/2)
         
         //        gradientLayer!.colors = [UIColor.blackColor().CGColor,
         //                                 UIColor.whiteColor().CGColor,
@@ -54,8 +54,8 @@ class AnimationLabel: UIView {
         
         gradientLayer!.locations = [0.2,0.5,0.8];
         
-        gradientLayer!.startPoint = CGPointMake(0, 0.5)
-        gradientLayer!.endPoint = CGPointMake(1, 0.5)
+        gradientLayer!.startPoint = CGPoint(x: 0, y: 0.5)
+        gradientLayer!.endPoint = CGPoint(x: 1, y: 0.5)
         
         self.layer.addSublayer(gradientLayer!)
         gradientLayer!.mask = label.layer
